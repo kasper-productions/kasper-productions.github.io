@@ -1,11 +1,11 @@
 'use strict';
 /**
  * @ngdoc function
- * @name sbAdminApp.controller:MainCtrl
+ * @name kApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the sbAdminApp
+ * Controller of the kApp
  */
-angular.module('sbAdminApp')
+angular.module('kApp')
   .controller('MainCtrl', function($scope,$position) {
   });

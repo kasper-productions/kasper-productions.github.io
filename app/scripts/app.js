@@ -1,14 +1,14 @@
 'use strict';
 /**
  * @ngdoc overview
- * @name sbAdminApp
+ * @name kApp
  * @description
- * # sbAdminApp
+ * # kApp
  *
  * Main module of the application.
  */
 angular
-  .module('sbAdminApp', [
+  .module('kApp', [
     'oc.lazyLoad',
     'ui.router',
     'ui.bootstrap',
@@ -31,7 +31,7 @@ angular
             loadMyDirectives:function($ocLazyLoad){
                 return $ocLazyLoad.load(
                 {
-                    name:'sbAdminApp',
+                    name:'kApp',
                     files:[
                     'scripts/directives/header/header.js',
                     'scripts/directives/header/header-notification/header-notification.js',
@@ -49,7 +49,7 @@ angular
         resolve: {
           loadMyFiles:function($ocLazyLoad) {
             return $ocLazyLoad.load({
-              name:'sbAdminApp',
+              name:'kApp',
               files:[
               'scripts/controllers/main.js',
               'scripts/directives/timeline/timeline.js',
@@ -87,7 +87,7 @@ angular
               ]
             }),
             $ocLazyLoad.load({
-                name:'sbAdminApp',
+                name:'kApp',
                 files:['scripts/controllers/chartContoller.js']
             })
           }
