@@ -30,15 +30,12 @@ angular.module('kApp', [
                 url: '/dashboard',
                 templateUrl: 'views/dashboard/main.html',
                 resolve: {
-                    loadMyDirectives: function ($ocLazyLoad) {
+                    loadMyFiles: function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
                             {
                                 name: 'kApp',
                                 files: [
-                                    'scripts/directives/header/header.js',
-                                    'scripts/directives/header/header-notification/header-notification.js',
-                                    'scripts/directives/sidebar/sidebar.js',
-                                    'scripts/directives/sidebar/sidebar-search/sidebar-search.js'
+                                    'scripts/directives/header/header.js'
                                 ]
                             })
                     }
@@ -46,18 +43,14 @@ angular.module('kApp', [
             })
             .state('dashboard.home', {
                 url: '/home',
-                controller: 'MainCtrl',
+                controller: 'HomeCtrl',
                 templateUrl: 'states/home/home.html',
                 resolve: {
                     loadMyFiles: function ($ocLazyLoad) {
                         return $ocLazyLoad.load({
                             name: 'kApp',
                             files: [
-                                'scripts/controllers/main.js',
-                                'scripts/directives/timeline/timeline.js',
-                                'scripts/directives/notifications/notifications.js',
-                                'scripts/directives/chat/chat.js',
-                                'scripts/directives/dashboard/stats/stats.js'
+                                'states/home/homeController.js'
                             ]
                         })
                     }
