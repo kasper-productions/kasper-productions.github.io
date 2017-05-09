@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
 
-        <a class="navbar-brand" href="index.html">KASPer Productions</a>
+        <a class="navbar-brand" ui-sref="dashboard.home">KASPer Productions</a>
 
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -12,20 +12,30 @@
 
     </div>
 
-    <ul class="nav navbar-top-links navbar-right">
+    <ul class="nav navbar-top-links navbar-right all-text-uppercase">
         <li>
-            <a>
-                <i class="fa fa-envelope fa-fw"></i>
+            <a ui-sref="dashboard.about">
+                About
             </a>
         </li>
         <li>
-            <a>
-                <i class="fa fa-tasks fa-fw"></i>
+            <a ui-sref="dashboard.videos">
+                Videos
             </a>
         </li>
         <li>
-            <a>
-                <i class="fa fa-bell fa-fw"></i>
+            <a ui-sref="dashboard.photos">
+                Photos
+            </a>
+        </li>
+        <li>
+            <a ui-sref="dashboard.requests">
+                Requests
+            </a>
+        </li>
+        <li>
+            <a ui-sref="dashboard.contact">
+                Contact
             </a>
         </li>
     </ul>
