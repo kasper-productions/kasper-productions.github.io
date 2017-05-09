@@ -292,3 +292,47 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+.white-text {
+    color: white;
+}
+
+.logo {
+    margin: 4px 16px 4px 4px;
+    text-transform: none;
+    letter-spacing: 2px;
+    font-weight: lighter !important;
+    font-style: normal;
+    font-size: 35px;
+    font-family: "Lato", sans-serif;
+    border: 2px solid dimgray;
+    padding: 2px;
+    min-height: 75px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.logo span {
+    display: block;
+    margin-top: 8px;
+    color: dimgray;
+}
+
+.logo-text-holder {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    cursor: default;
+}
+
+.logo-text {
+    font-size: x-large;
+    font-weight: lighter !important;
+    display: block;
+    margin-top: 2px;
+}
+
+.logo-text-small {
+    display: block;
+    margin-top: 2px;
+    font-weight: lighter !important;
+}
