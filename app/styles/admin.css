@@ -75,6 +75,12 @@ body {
     left: auto;
 }
 
+.navbar-toggle {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
 @media(min-width:768px) {
     .navbar-top-links .dropdown-messages,
     .navbar-top-links .dropdown-tasks,
@@ -317,6 +323,10 @@ table.dataTable thead .sorting:after {
     display: block;
     margin-top: 8px;
     color: dimgray;
+}
+
+#logo-holder {
+    width: 300px;
 }
 
 .logo-text-holder {
