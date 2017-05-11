@@ -326,10 +326,10 @@ table.dataTable thead .sorting:after {
 }
 
 .logo-text {
+    padding-top: 15px;
     font-size: x-large;
     font-weight: lighter !important;
     display: block;
-    margin-top: 12px;
 }
 
 .logo-text-small {
