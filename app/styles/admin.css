@@ -16,6 +16,12 @@ body {
     background-color: #fff;
 }
 
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    /*font-family: "Roboto Condensed", sans-serif;*/
+    border-color: rgba(255, 255, 255, .2);
+}
+
 .navbar-top-links {
     margin-right: 0;
     margin-top: 17px;
@@ -32,6 +38,21 @@ body {
 .navbar-top-links li a {
     padding: 15px;
     min-height: 50px;
+    color: white;
+}
+
+.navbar-top-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.navbar-top-links li a:focus {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+    color: white;
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -328,7 +349,7 @@ table.dataTable thead .sorting:after {
     font-style: normal;
     font-size: 35px;
     font-family: "Lato", sans-serif;
-    border: 2px solid dimgray;
+    border: 2px solid white;
     padding: 2px;
     min-height: 75px;
     min-width: 65px;
@@ -338,7 +359,7 @@ table.dataTable thead .sorting:after {
 .logo span {
     display: block;
     margin-top: 8px;
-    color: dimgray;
+    color: white;
 }
 
 #logo-holder {
