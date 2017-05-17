@@ -88,6 +88,22 @@ body {
         margin-left: auto;
     }
 }
+@media(max-width:760px) {
+    .navbar-top-links {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-top-links li {
+        display: block;
+    }
+
+    .navbar-top-links li a {
+        padding: 8px;
+        min-height: 35px;
+    }
+}
 
 .btn-outline {
     color: inherit;
