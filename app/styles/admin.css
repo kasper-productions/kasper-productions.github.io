@@ -1,9 +1,24 @@
+.absolute-custom-footer {
+    z-index:1000;
+    width: 100%;
+    position: absolute;
+    bottom: 8px
+}
+
 .all-text-uppercase {
     text-transform: uppercase;
 }
 
 body {
     background-color: #f8f8f8;
+}
+
+.custom-footer-icon:hover {
+    color: silver;
+}
+
+.custom-footer-icon:focus {
+    color: silver;
 }
 
 #wrapper {
@@ -124,6 +139,10 @@ body {
         padding: 8px;
         min-height: 35px;
     }
+}
+
+.default-cursor {
+    cursor: default;
 }
 
 .btn-outline {
