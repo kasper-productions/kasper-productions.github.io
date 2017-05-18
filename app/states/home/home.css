@@ -2,18 +2,20 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 #bg-vid {
     display: block;
     position: absolute;
+    min-width: 100%;
+    min-height: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
 }
 
 @media (max-width: 400px){
