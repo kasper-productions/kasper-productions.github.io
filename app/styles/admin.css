@@ -342,7 +342,7 @@ table.dataTable thead .sorting:after {
 }
 
 .logo {
-    margin: 4px 4px 4px 4px;
+    margin: 4px 8px 4px 4px;
     text-transform: none;
     letter-spacing: 2px;
     font-weight: lighter !important;
