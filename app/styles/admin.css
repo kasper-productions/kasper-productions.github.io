@@ -1,9 +1,23 @@
+.absolute-custom-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 8px
+}
+
 .all-text-uppercase {
     text-transform: uppercase;
 }
 
 body {
     background-color: #f8f8f8;
+}
+
+.custom-footer-icon:hover {
+    color: silver;
+}
+
+.custom-footer-icon:focus {
+    color: silver;
 }
 
 #wrapper {
@@ -14,6 +28,12 @@ body {
     padding: 0 15px;
     min-height: 568px;
     background-color: #fff;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    /*font-family: "Roboto Condensed", sans-serif;*/
+    border-color: rgba(255, 255, 255, .2);
 }
 
 .navbar-top-links {
@@ -32,6 +52,21 @@ body {
 .navbar-top-links li a {
     padding: 15px;
     min-height: 50px;
+    color: white;
+}
+
+.navbar-top-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.navbar-top-links li a:focus {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+    color: white;
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -75,12 +110,38 @@ body {
     left: auto;
 }
 
+.navbar-toggle {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
 @media(min-width:768px) {
     .navbar-top-links .dropdown-messages,
     .navbar-top-links .dropdown-tasks,
     .navbar-top-links .dropdown-alerts {
         margin-left: auto;
     }
+}
+@media(max-width:760px) {
+    .navbar-top-links {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-top-links li {
+        display: block;
+    }
+
+    .navbar-top-links li a {
+        padding: 8px;
+        min-height: 35px;
+    }
+}
+
+.default-cursor {
+    cursor: default;
 }
 
 .btn-outline {
@@ -299,14 +360,14 @@ table.dataTable thead .sorting:after {
 }
 
 .logo {
-    margin: 4px 4px 4px 4px;
+    margin: 4px 8px 4px 4px;
     text-transform: none;
     letter-spacing: 2px;
     font-weight: lighter !important;
     font-style: normal;
     font-size: 35px;
     font-family: "Lato", sans-serif;
-    border: 2px solid dimgray;
+    border: 2px solid white;
     padding: 2px;
     min-height: 75px;
     min-width: 65px;
@@ -316,7 +377,11 @@ table.dataTable thead .sorting:after {
 .logo span {
     display: block;
     margin-top: 8px;
-    color: dimgray;
+    color: white;
+}
+
+#logo-holder {
+    width: 300px;
 }
 
 .logo-text-holder {
