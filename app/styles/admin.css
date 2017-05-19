@@ -12,6 +12,16 @@ body {
     background-color: #f8f8f8;
 }
 
+.col-center {
+    display:inline-block;
+    float:none;
+}
+
+.custom-page-header {
+    width: 100%;
+    text-align: center;
+}
+
 .custom-footer-icon:hover {
     color: silver;
 }
