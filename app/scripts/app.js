@@ -13,7 +13,9 @@ angular.module('kApp', [
         'oc.lazyLoad',
         'ui.router',
         'ui.bootstrap',
-        'angular-loading-bar'
+        'angular-loading-bar',
+        'ngAnimate',
+        'thatisuday.ng-image-gallery'
     ]
 ).config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider',
     function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
