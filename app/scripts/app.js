@@ -17,24 +17,12 @@ angular.module('kApp', [
         'ngAnimate',
         'thatisuday.ng-image-gallery'
     ]
-).config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', 'ngImageGalleryOptsProvider',
-    function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, ngImageGalleryOptsProvider) {
+).config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider',
+    function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
 
         $ocLazyLoadProvider.config({
             debug: false,
             events: true
-        });
-
-        ngImageGalleryOptsProvider.setOpts({
-            thumbnails  	:   true,
-            thumbSize		: 	80,
-            inline      	:   false,
-            bubbles     	:   true,
-            bubbleSize		: 	20,
-            imgBubbles  	:   false,
-            bgClose     	:   false,
-            piracy 			: 	false,
-            imgAnim 		: 	'fadeup'
         });
 
         $urlRouterProvider.otherwise('/dashboard/home');
