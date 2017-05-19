@@ -1,16 +1,59 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<nav class="navbar navbar-custom navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
 
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <div id="logo-holder">
+            <a class="navbar-brand logo" ui-sref="dashboard.home">
+                <span> KS </span>
+                <span> PR </span>
+            </a>
+            <div class="logo-text-holder">
+                <span class="white-text logo-text">KASPer Productions</span>
+                <span class="white-text logo-text-small">University of Wisconsin - Madison</span>
+            </div>
+        </div>
+
+        <button type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
-    </div>
-    <!-- /.navbar-header -->
-    <header-notification></header-notification>
 
-    <sidebar></sidebar>
+    </div>
+
+    <ul class="nav navbar-top-links navbar-right all-text-uppercase navbar-collapse collapse">
+        <li>
+            <a ui-sref="dashboard.about">
+                About
+            </a>
+        </li>
+        <li>
+            <a ui-sref="dashboard.videos">
+                Videos
+            </a>
+        </li>
+        <li>
+            <a ui-sref="dashboard.photos">
+                Photos
+            </a>
+        </li>
+        <li>
+            <a ui-sref="dashboard.requests">
+                Requests
+            </a>
+        </li>
+        <li>
+            <a ui-sref="dashboard.contact">
+                Contact
+            </a>
+        </li>
+    </ul>
+
 </nav>
+
+<div id="mainContent">
+    <div ui-view></div>
+</div>
