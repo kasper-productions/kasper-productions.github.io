@@ -368,7 +368,7 @@ module.exports = function (grunt) {
       pages: {
         options: {
           remote: 'git@github.com:kasper-productions.github.io.git',
-          branch: 'gh-pages'
+          branch: 'master'
         }
       },
       heroku: {
