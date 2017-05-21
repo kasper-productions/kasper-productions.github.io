@@ -4,6 +4,8 @@
 angular.module('kApp').controller('PhotosCtrl',
     function ($scope) {
 
+        $scope.images = [];
+
         $scope.fileNames = [
             'Andrew 1.jpg', 'Chloe.jpg', 'David.jpg',
             'DSC00578.JPG', 'DSC00579.JPG', 'DSC00580.JPG',
@@ -35,8 +37,6 @@ angular.module('kApp').controller('PhotosCtrl',
         ];
 
         $scope.$on('$viewContentLoaded', function(){
-            $scope.images = [];
-
             for (var i = 0; i < $scope.fileNames.length; i += 1) {
                 var fileName = $scope.fileNames[i];
                 var imgObj = {

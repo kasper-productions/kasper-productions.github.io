@@ -5,20 +5,38 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
-    background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
-    background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
+    background-color: whitesmoke;
 }
 
 #image-gallery-holder {
-    height: 88%;
-    border-radius: 2px;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
     padding: 4px;
     overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    background-color: white;
+}
+
+#image-gallery-holder::-webkit-scrollbar-track {
+    display: none;
+}
+
+#image-gallery-holder::-webkit-scrollbar {
+    display: none;
+}
+
+#image-gallery-holder::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+#image-gallery-bottom-shade {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    background: -webkit-linear-gradient(transparent, white);
+    background: -o-linear-gradient(transparent, white);
+    background: -moz-linear-gradient(transparent, white);
+    background: linear-gradient(transparent, white);
+    overflow-x: hidden;
 }
