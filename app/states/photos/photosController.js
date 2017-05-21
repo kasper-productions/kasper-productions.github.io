@@ -4,6 +4,10 @@
 angular.module('kApp').controller('PhotosCtrl',
     function ($scope) {
 
+        $scope.imagesCol1 = [];
+        $scope.imagesCol2 = [];
+        $scope.imagesCol3 = [];
+
         $scope.fileNames = [
             'Andrew 1.jpg', 'Chloe.jpg', 'David.jpg',
             'DSC00578.JPG', 'DSC00579.JPG', 'DSC00580.JPG',
@@ -35,8 +39,7 @@ angular.module('kApp').controller('PhotosCtrl',
         ];
 
         $scope.$on('$viewContentLoaded', function(){
-            $scope.images = [];
-
+            var pushToCol = 1;
             for (var i = 0; i < $scope.fileNames.length; i += 1) {
                 var fileName = $scope.fileNames[i];
                 var imgObj = {
@@ -45,7 +48,24 @@ angular.module('kApp').controller('PhotosCtrl',
                     url: '../../assets/kasper-drive/' + fileName
                 };
 
-                $scope.images.push(imgObj);
+                switch (pushToCol) {
+                    case (1):
+                        $scope.imagesCol1.push(imgObj);
+                        pushToCol += 1;
+                        break;
+                    case (2):
+                        $scope.imagesCol2.push(imgObj);
+                        pushToCol += 1;
+                        break;
+                    case (3):
+                        $scope.imagesCol3.push(imgObj);
+                        pushToCol = 1;
+                        break;
+                    default:
+                        $scope.imagesCol1.push(imgObj);
+                        pushToCol = 1;
+                        break;
+                }
             }
         });
     }

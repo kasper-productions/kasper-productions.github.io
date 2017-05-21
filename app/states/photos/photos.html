@@ -1,53 +1,37 @@
 <div id="photos-holder">
-    <div id="image-gallery-holder">
-        <ng-image-gallery images="images"
-                          thumbnails="true"
-                          thumb-size="90"
-                          inline="false"
-                          bubbles="false"
-                          img-bubbles="false"
-                          bg-close="false"
-                          piracy="false"
-                          img-anim="slide"></ng-image-gallery>
-    </div>
-</div>
-<div class="absolute-custom-footer text-center">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col col-md-4"></div>
-            <div class="footer-col col-md-4">
-                <ul class="list-inline">
-                    <li>
-                        <a href="https://www.facebook.com/kasper.uwmadison"
-                           class="btn-social btn-outline fa-stack white-text custom-footer-icon">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-fw fa-facebook fa-stack-1x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/kasperuw/"
-                           class="btn-social btn-outline fa-stack white-text custom-footer-icon">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-fw fa-instagram fa-stack-1x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC5PvgI9jevrQ6sRSFY1xgxA"
-                           class="btn-social btn-outline fa-stack white-text custom-footer-icon">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-fw fa-youtube-play fa-stack-1x"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-col col-md-4"></div>
+    <div class="image-gallery-holder-row">
+        <div class="image-gallery-holder-col">
+            <ng-image-gallery images="imagesCol1"
+                              thumbnails="true"
+                              thumb-size="300"
+                              inline="false"
+                              bubbles="false"
+                              img-bubbles="false"
+                              bg-close="true"
+                              piracy="false"
+                              img-anim="slide"></ng-image-gallery>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 white-text all-text-uppercase default-cursor">
-                Copyright &copy; UW-Madison KASPer Productions 2017
-            </div>
+        <div class="image-gallery-holder-col">
+            <ng-image-gallery images="imagesCol2"
+                              thumbnails="true"
+                              thumb-size="300"
+                              inline="false"
+                              bubbles="false"
+                              img-bubbles="false"
+                              bg-close="true"
+                              piracy="false"
+                              img-anim="slide"></ng-image-gallery>
+        </div>
+        <div class="image-gallery-holder-col">
+            <ng-image-gallery images="imagesCol3"
+                              thumbnails="true"
+                              thumb-size="300"
+                              inline="false"
+                              bubbles="false"
+                              img-bubbles="false"
+                              bg-close="true"
+                              piracy="false"
+                              img-anim="slide"></ng-image-gallery>
         </div>
     </div>
 </div>
