@@ -8,35 +8,17 @@
     background-color: whitesmoke;
 }
 
-#image-gallery-holder {
-    padding: 4px;
-    overflow-y: scroll;
+.image-gallery-holder-col {
     height: 100%;
+    width: 33%;
+    display: inline-block;
     background-color: white;
 }
 
-#image-gallery-holder::-webkit-scrollbar-track {
-    display: none;
+.image-gallery-holder-row {
+    white-space: nowrap;
 }
 
-#image-gallery-holder::-webkit-scrollbar {
-    display: none;
-}
-
-#image-gallery-holder::-webkit-scrollbar-thumb {
-    display: none;
-}
-
-#image-gallery-bottom-shade {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background: transparent;
-    background: -webkit-linear-gradient(transparent, white);
-    background: -o-linear-gradient(transparent, white);
-    background: -moz-linear-gradient(transparent, white);
-    background: linear-gradient(transparent, white);
-    overflow-x: hidden;
+.ng-image-gallery-thumbnails div {
+    width: 100% !important;
 }
