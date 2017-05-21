@@ -5,20 +5,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
-    background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
-    background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75));
+    background-color: whitesmoke;
 }
 
-#image-gallery-holder {
-    height: 88%;
-    border-radius: 2px;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
-    padding: 4px;
-    overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.5);
+.image-gallery-holder-col {
+    height: 100%;
+    width: 33%;
+    display: inline-block;
+    background-color: white;
+}
+
+.image-gallery-holder-row {
+    white-space: nowrap;
+}
+
+.ng-image-gallery-thumbnails div {
+    width: 100% !important;
 }
