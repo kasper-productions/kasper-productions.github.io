@@ -47,6 +47,6 @@
     "test": "grunt test",
     "start": "grunt serve",
     "dist": "grunt serve:dist",
-    "postinstall": "node node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
