@@ -367,7 +367,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:kasper-productions/kasper-productions.github.io.git',
+          remote: 'https://github.com/kasper-productions/kasper-productions.github.io.git',
           branch: 'master'
         }
       },
