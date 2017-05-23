@@ -10,6 +10,7 @@
                     rgba(0, 0, 0, 0.3),
                     rgba(0, 0, 0, 0.3)),
             url("../../assets/contact-background.png");
+    overflow-x: hidden;
 }
 
 .contact-input-fields {
@@ -53,4 +54,10 @@
 
 .contact-input-fields input:focus {
     outline: none;
+}
+
+@media (max-height: 610px){
+    #custom-contact-footer {
+        position: static;
+    }
 }
