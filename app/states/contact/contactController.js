@@ -7,6 +7,7 @@ angular.module('kApp').controller('ContactCtrl',
         $scope.user = {};
 
         //TODO: set this up: https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+        //TODO: better alert
         $scope.sendMessage = function () {
             var response;
 
