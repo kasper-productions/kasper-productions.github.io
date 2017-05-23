@@ -10,42 +10,26 @@
                     rgba(0, 0, 0, 0.3),
                     rgba(0, 0, 0, 0.3)),
             url("../../assets/contact-background.png");
+    overflow-x: hidden;
 }
 
 .contact-input-fields {
     margin-top: 24px;
     margin-bottom: 24px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact-input-fields-first {
-    background: white;
-    border: 1px solid white;
-    text-align: center;
-    color: black;
-    margin: 1px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    max-width: 202px;
-}
-
-.contact-input-fields-other-child {
-    background: white;
-    border: 1px solid white;
-    text-align: center;
-    color: black;
-    margin: 3px;
-    max-width: 409px;
+.contact-input {
+    border: none;
+    border-radius: 0;
 }
 
 .contact-input-fields-message-child {
-    background: white;
-    border: 1px solid white;
-    color: black;
-    margin: 2px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    max-width: 409px;
+    border: none;
     min-height: 100px;
+    border-radius: 0;
 }
 
 .contact-input-fields-button-child {
@@ -55,7 +39,8 @@
     text-align: center;
     color: white;
     margin: 2px;
-    max-width: 409px;
+    width: 100%;
+    border-radius: 0;
 }
 
 .contact-input-fields-button-child:hover {
@@ -63,6 +48,16 @@
     color: black
 }
 
+.contact-input-fields-button-child:focus {
+    outline: none;
+}
+
 .contact-input-fields input:focus {
     outline: none;
+}
+
+@media (max-height: 610px){
+    #custom-contact-footer {
+        position: static;
+    }
 }
