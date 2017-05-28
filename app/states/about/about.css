@@ -28,3 +28,38 @@
 .about-us-paragraph a:hover {
     color: silver;
 }
+
+#about-us-member-profile-holders {
+    display: table;
+}
+
+#about-us-member-profile {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7));
+    border-radius: 4px;
+    padding: 16px;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#about-us-member-profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#about-us-member-profile-name {
+    margin-top: 12px;
+    font-size: large;
+    display: block;
+}
+
+#about-us-member-profile-position {
+    display: block;
+    font-style: italic;
+}
+

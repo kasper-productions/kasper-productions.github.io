@@ -17,6 +17,13 @@
             </p>
         </div>
     </div>
+    <div id="about-us-member-profile-holders" class="white-text">
+        <div id="about-us-member-profile" ng-repeat="member in memberArray">
+            <img ng-src="{{member.image}}"/>
+            <span id="about-us-member-profile-name">{{member.name}}</span>
+            <span id="about-us-member-profile-position">{{member.position}}</span>
+        </div>
+    </div>
     <div class="absolute-custom-footer text-center" id="custom-contact-footer">
         <div class="container">
             <div class="row">
