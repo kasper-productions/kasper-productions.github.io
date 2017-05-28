@@ -35,7 +35,6 @@ angular.module('kApp').controller('PhotosCtrl',
             'Karie 1.jpg', 'Kathy 2.jpg', 'Kayla 1.jpg',
             'Lisa 1.jpg', 'Ruilin.jpg', 'Yodi 1.jpg',
             'Yodi 2.jpg', 'Yodi.jpg'
-
         ];
 
         $scope.$on('$viewContentLoaded', function(){
@@ -44,8 +43,8 @@ angular.module('kApp').controller('PhotosCtrl',
                 var fileName = $scope.fileNames[i];
                 var imgObj = {
                     id: i + 1,
-                    thumbUrl: '../../assets/kasper-drive-thumbs/' + fileName,
-                    url: '../../assets/kasper-drive/' + fileName
+                    thumbUrl: 'https://s3.us-east-2.amazonaws.com/kasperprodphotos/thumbs/' + fileName,
+                    url: 'https://s3.us-east-2.amazonaws.com/kasperprodphotos/drive/' + fileName
                 };
 
                 switch (pushToCol) {
