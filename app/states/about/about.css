@@ -14,6 +14,7 @@
 }
 
 .about-us-paragraph {
+    margin-top: 12px;
     padding-left: 12px;
     padding-right: 12px;
     display: inline-block;
@@ -29,7 +30,8 @@
     color: silver;
 }
 
-#about-us-member-profile-holders {
+#about-us-member-profile-holder {
+    margin: auto;
     display: table;
     border-spacing: 6px 6px;
 }
