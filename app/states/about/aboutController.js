@@ -13,6 +13,9 @@ angular.module('kApp').controller('AboutCtrl',
             };
         }
         $scope.memberArray = [
+            memberObject("Tammy L. Park", "Creative Director", "../../assets/tammy.jpg"),
+            memberObject("Shelly Yang", "Executive Producer", "../../assets/shelly.jpg"),
+            memberObject("Cindy Xu", "Producer", "../../assets/cindy.jpg"),
             memberObject("Kawika Avilla", "Web Developer", "../../assets/kawika.jpg")
         ];
 
