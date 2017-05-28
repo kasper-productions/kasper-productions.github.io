@@ -1,0 +1,84 @@
+#about-background {
+    padding: 91px 8px 8px 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)),
+            url("../../assets/about-background.png");
+    overflow-x: hidden;
+}
+
+.about-us-paragraph {
+    max-width: 850px;
+    margin-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+    text-align: left
+}
+
+.about-us-paragraph a {
+    color: white;
+    text-decoration: underline;
+}
+
+.about-us-paragraph a:hover {
+    color: silver;
+}
+
+.about-us-paragraph-contact {
+    margin-top: 32px;
+}
+
+#about-us-member-profile-holder {
+    width: 100%;
+    text-align: center;
+}
+
+#about-us-member-profile {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7));
+    border-radius: 4px;
+    padding: 8px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px;
+}
+
+/*#about-us-member-profile:hover {*/
+    /*-moz-box-shadow:    0 0 3px 2px #ccc;*/
+    /*-webkit-box-shadow: 0 0 3px 2px #ccc;*/
+    /*box-shadow:         0 0 3px 2px #ccc;*/
+/*}*/
+
+#about-us-member-profile img {
+    height: 65%;
+    width: auto;
+    border-radius: 50%;
+}
+
+#about-us-member-profile-name {
+    margin-top: 12px;
+    font-size: large;
+    display: block;
+}
+
+#about-us-member-profile-position {
+    display: block;
+    font-style: italic;
+}
+
+@media (max-height: 810px){
+    #custom-about-footer {
+        position: static;
+    }
+}
+

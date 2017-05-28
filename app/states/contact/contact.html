@@ -1,67 +1,81 @@
 <div id="contact-background">
-    <h1 class="custom-page-header white-text capitalize-all-text">
+    <h2 class="custom-page-header white-text all-text-uppercase">
         Contact Us
-    </h1>
+    </h2>
     <div class="text-center white-text">
         <h4>kasprod.official@gmail.com</h4>
-        <form class="contact-input-fields container">
-            <div class="row text-center">
-                <input class="col-md-6 col-center contact-input-fields-first"
-                       type="text" name="name" placeholder="NAME">
-                <input class="col-md-6 col-center contact-input-fields-first"
-                       type="text" name="email" placeholder="EMAIL">
-            </div>
-            <div class="row text-center">
-                <input class="col-md-12 col-center contact-input-fields-other-child"
-                       type="text" name="subject" placeholder="SUBJECT">
-            </div>
-            <div class="row text-center">
-                <textarea class="col-xs-8 col-center contact-input-fields-message-child"
-                          name="message" placeholder="MESSAGE"></textarea>
-            </div>
-            <div class="row text-center">
-                <input class="col-xs-8 col-center contact-input-fields-button-child"
-                       type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
-</div>
-<div class="absolute-custom-footer text-center">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col col-md-4"></div>
-            <div class="footer-col col-md-4">
-                <ul class="list-inline">
-                    <li>
-                        <a href="https://www.facebook.com/kasper.uwmadison"
-                           class="btn-social btn-outline fa-stack white-text custom-footer-icon">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-fw fa-facebook fa-stack-1x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/kasperuw/"
-                           class="btn-social btn-outline fa-stack white-text custom-footer-icon">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-fw fa-instagram fa-stack-1x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC5PvgI9jevrQ6sRSFY1xgxA"
-                           class="btn-social btn-outline fa-stack white-text custom-footer-icon">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-fw fa-youtube-play fa-stack-1x"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-col col-md-4"></div>
+        <div class="contact-input-fields">
+            <form>
+                <div class="form-group">
+                    <label class="sr-only" for="name">Name:</label>
+                    <input type="text"
+                           class="form-control contact-input"
+                           ng-model="user.name"
+                           id="name" placeholder="NAME">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="email">Email address:</label>
+                    <input type="email"
+                           class="form-control contact-input"
+                           ng-model="user.email"
+                           id="email" placeholder="EMAIL">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="subject">Subject:</label>
+                    <input type="text"
+                           class="form-control contact-input"
+                           ng-model="user.subject"
+                           id="subject" placeholder="SUBJECT (OPTIONAL)">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="message">Message:</label>
+                    <textarea class="form-control contact-input-fields-message-child"
+                              ng-model="user.message"
+                              id="message" placeholder="MESSAGE"></textarea>
+                </div>
+                <button type="submit"
+                        ng-click="sendMessage()"
+                        class="btn btn-default contact-input-fields-button-child">Submit</button>
+            </form>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 white-text all-text-uppercase default-cursor">
-                Copyright &copy; UW-Madison KASPer Productions 2017
+    <div class="absolute-custom-footer text-center" id="custom-contact-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4"></div>
+                <div class="footer-col col-md-4">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/kasper.uwmadison"
+                               class="btn-social btn-outline fa-stack white-text custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-facebook fa-stack-1x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kasperuw/"
+                               class="btn-social btn-outline fa-stack white-text custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC5PvgI9jevrQ6sRSFY1xgxA"
+                               class="btn-social btn-outline fa-stack white-text custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-youtube-play fa-stack-1x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 white-text all-text-uppercase default-cursor">
+                    Copyright &copy; UW-Madison KASPer Productions 2017
+                </div>
             </div>
         </div>
     </div>
