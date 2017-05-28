@@ -1,3 +1,71 @@
-<div>
-    About
+<div id="about-background">
+    <h2 class="custom-page-header white-text all-text-uppercase">
+        About Us
+    </h2>
+
+    <!-- TODO make these clickable to expand a modal of more info on member -->
+    <div id="about-us-member-profile-holder" class="white-text">
+        <div id="about-us-member-profile" ng-repeat="member in memberArray">
+            <img ng-src="{{member.image}}"/>
+            <span id="about-us-member-profile-name">{{member.name}}</span>
+            <span id="about-us-member-profile-position">{{member.position}}</span>
+        </div>
+    </div>
+
+    <div class="white-text text-center">
+        <div class="about-us-paragraph">
+            <p>
+                KASPer (Korean & American Student Performers) is an organization of University of Wisconsin - Madison
+                that is split into into a dance crew and a production crew.
+            </p>
+            <p>
+                KASPer Productions are the creative minds of KASPer. We are responsible for all photography and videography,
+                and comprised of talented individuals with a variety of specialities.
+            </p>
+            <p class="text-center about-us-paragraph-contact">
+                Enjoy our work? Interested in our services? <a ui-sref="dashboard.contact">Contact us!</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="absolute-custom-footer text-center" id="custom-about-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4"></div>
+                <div class="footer-col col-md-4">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/kasper.uwmadison"
+                               class="btn-social btn-outline fa-stack white-text custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-facebook fa-stack-1x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kasperuw/"
+                               class="btn-social btn-outline fa-stack white-text custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC5PvgI9jevrQ6sRSFY1xgxA"
+                               class="btn-social btn-outline fa-stack white-text custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-youtube-play fa-stack-1x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 white-text all-text-uppercase default-cursor">
+                    Copyright &copy; UW-Madison KASPer Productions 2017
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
