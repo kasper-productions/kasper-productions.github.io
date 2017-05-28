@@ -76,3 +76,9 @@
     font-style: italic;
 }
 
+@media (max-height: 810px){
+    #custom-about-footer {
+        position: static;
+    }
+}
+
