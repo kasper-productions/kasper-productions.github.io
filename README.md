@@ -1,6 +1,6 @@
 ## Kasper Production website rewritten in AngularJS
 
-This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular Theme.
+Master branch is being hosted on heroku.
 
 
 ## Installation
