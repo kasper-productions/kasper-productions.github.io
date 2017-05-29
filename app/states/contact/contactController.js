@@ -6,6 +6,8 @@ angular.module('kApp').controller('ContactCtrl',
         
         $scope.user = {};
 
+        //TODO: format google script in kawika.kasper increment version for reference:
+        //TODO: https://github.com/dwyl/html-form-send-email-via-google-script-without-server
         //TODO: better alert
         $scope.sendMessage = function () {
             var response;
@@ -27,9 +29,9 @@ angular.module('kApp').controller('ContactCtrl',
                     data    : $scope.user,
                     headers : {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).success(
-                    function(data) {
+                    function() {
+                        response = "Message sent! We will respond to " + $scope.user.email + " as soon as possible!";
                         $scope.user = {};
-                        response = data.message;
                         alert(response);
                     }
                 );
