@@ -7,7 +7,7 @@
     </h2>
 
     <!-- TODO make these clickable to expand a modal of more info on member -->
-    <div id="about-us-member-profile-holder" class="white-text">
+    <div id="about-us-member-profile-holder">
         <div id="about-us-member-profile" ng-repeat="member in memberArray">
             <img ng-src="{{member.image}}"/>
             <span id="about-us-member-profile-name">{{member.name}}</span>
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="white-text text-center">
+    <div class="text-center" id="about-us-paragraph-holder">
         <div class="about-us-paragraph">
             <p>
                 KASPer (Korean & American Student Performers) is an organization of University of Wisconsin - Madison
@@ -26,7 +26,11 @@
                 and comprised of talented individuals with a variety of specialities.
             </p>
             <p class="text-center about-us-paragraph-contact">
-                Enjoy our work? Interested in our services? <a ui-sref="dashboard.contact">Contact us!</a>
+                Enjoy our work? Interested in our services?
+                <br>
+                <a class="btn btn-default" ui-sref="dashboard.contact">
+                    Contact us
+                </a>
             </p>
         </div>
     </div>

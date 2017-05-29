@@ -1,5 +1,5 @@
 #about-background {
-    padding: 91px 8px 8px 8px;
+    padding: 91px 0 8px 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,9 +32,15 @@
     background-color: black;
 }
 
+#about-us-paragraph-holder {
+    background: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+}
+
 .about-us-paragraph {
     max-width: 850px;
-    margin-top: 24px;
     padding-left: 12px;
     padding-right: 12px;
     display: inline-block;
@@ -42,12 +48,21 @@
 }
 
 .about-us-paragraph a {
-    color: white;
-    text-decoration: underline;
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+    margin-top: 8px;
+    width: 50%;
+    border-radius: 0;
 }
 
 .about-us-paragraph a:hover {
     color: silver;
+    text-decoration: none;
+    border-color: silver;
+    background: transparent;
 }
 
 .about-us-paragraph-contact {
@@ -60,10 +75,7 @@
 }
 
 #about-us-member-profile {
-    background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.7),
-                    rgba(0, 0, 0, 0.7));
+    background: white;
     border-radius: 4px;
     padding: 8px;
     height: 200px;
