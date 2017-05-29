@@ -95,7 +95,7 @@
     font-style: italic;
 }
 
-@media (max-height: 810px){
+@media (max-height: 670px){
     #custom-about-footer {
         position: static;
     }
