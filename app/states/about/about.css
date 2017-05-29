@@ -5,12 +5,31 @@
     left: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     background:
             linear-gradient(
                     rgba(0, 0, 0, 0.7),
-                    rgba(0, 0, 0, 0.7)),
-            url("../../assets/about-background.png");
-    overflow-x: hidden;
+                    rgba(0, 0, 0, 0.7));
+}
+
+#about-background-image {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-background-image-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
 }
 
 .about-us-paragraph {
