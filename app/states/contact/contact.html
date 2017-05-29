@@ -5,7 +5,7 @@
     <div class="text-center white-text">
         <h4>kasprod.official@gmail.com</h4>
         <div class="contact-input-fields">
-            <form>
+            <form ng-submit="sendMessage()">
                 <div class="form-group">
                     <label class="sr-only" for="name">Name:</label>
                     <input type="text"
@@ -34,7 +34,6 @@
                               id="message" placeholder="MESSAGE"></textarea>
                 </div>
                 <button type="submit"
-                        ng-click="sendMessage()"
                         class="btn btn-default contact-input-fields-button-child">Submit</button>
             </form>
         </div>
