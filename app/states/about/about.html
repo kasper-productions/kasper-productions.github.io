@@ -1,13 +1,9 @@
-<div id="about-background-image-holder">
-    <img id="about-background-image" src="../../assets/about-background.png"/>
-</div>
 <div id="about-background">
-    <h2 class="custom-page-header white-text all-text-uppercase">
-        About Us
-    </h2>
-
     <!-- TODO make these clickable to expand a modal of more info on member -->
     <div id="about-us-member-profile-holder">
+        <h2 id="about-us-page-header" class="custom-page-header white-text all-text-uppercase">
+            About Us
+        </h2>
         <div id="about-us-member-profile" ng-repeat="member in memberArray">
             <img ng-src="{{member.image}}"/>
             <span id="about-us-member-profile-name">{{member.name}}</span>
