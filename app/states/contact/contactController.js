@@ -2,7 +2,7 @@
  * Created by kawika on 5/4/17.
  */
 angular.module('kApp').controller('ContactCtrl',
-    function ($scope, $http) {
+    function ($scope, $http, $modal) {
         
         $scope.user = {};
 
@@ -36,9 +36,18 @@ angular.module('kApp').controller('ContactCtrl',
             }
 
             if (notEnoughData) {
-                alert(response);
+                //alert(response);
+                $scope.openAlert();
             }
 
+        };
+
+        $scope.openAlert = function () {
+            $modal.open({
+                templateUrl: 'contactModal.html',
+                windowClass: 'contactModal',
+                scope: $scope
+            });
         }
     }
 );
