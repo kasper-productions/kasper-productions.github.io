@@ -1,9 +1,9 @@
 <div id="about-background">
     <!-- TODO make these clickable to expand a modal of more info on member -->
     <div id="about-us-member-profile-holder">
-        <h2 id="about-us-page-header" class="custom-page-header white-text all-text-uppercase">
-            About Us
-        </h2>
+        <h3 id="about-us-page-header" class="custom-page-header">
+            Members
+        </h3>
         <div id="about-us-member-profile" ng-repeat="member in memberArray">
             <img ng-src="{{member.image}}"/>
             <span id="about-us-member-profile-name">{{member.name}}</span>
@@ -11,6 +11,9 @@
         </div>
     </div>
 
+    <h3 id="about-us-sub-header" class="custom-page-header">
+        About Us
+    </h3>
     <div class="text-center" id="about-us-paragraph-holder">
         <div class="about-us-paragraph">
             <p>

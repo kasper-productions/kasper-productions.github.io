@@ -11,9 +11,9 @@
 
 #about-us-paragraph-holder {
     background: white;
-    margin-top: 8px;
     margin-bottom: 8px;
     padding: 12px;
+    padding-top: 1px;
 }
 
 .about-us-paragraph {
@@ -48,37 +48,38 @@
 }
 
 .about-us-paragraph-contact {
-    margin-top: 32px;
+    margin-top: 40px;
 }
 
 #about-us-member-profile-holder {
     width: 100%;
     text-align: center;
     padding-bottom: 8px;
-    background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5));
+    background: white;
 }
 
 #about-us-member-profile {
-    background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.75),
-                    rgba(0, 0, 0, 0.75));
-    border: solid white 1px;
+    background: transparent;
+    border: solid lightgrey 1px;
     border-radius: 4px;
     padding: 8px;
     height: 200px;
     text-align: center;
     display: inline-block;
     margin: 4px;
-    color: white;
 }
 
 #about-us-page-header {
     margin-top: -6px;
     padding-top: 8px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+#about-us-sub-header {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-weight: 400;
 }
 
 /*#about-us-member-profile:hover {*/

@@ -16,6 +16,7 @@ angular.module('kApp').controller('AboutCtrl',
             memberObject("Tammy L. Park", "Creative Director", "../../assets/tammy.jpg"),
             memberObject("Shelly Yang", "Executive Producer", "../../assets/shelly.jpg"),
             memberObject("Cindy Xu", "Producer", "../../assets/cindy.jpg"),
+            memberObject("Jin-An Ho", "Producer", "../../assets/jin-an.jpg"),
             memberObject("Kawika Avilla", "Web Developer", "../../assets/kawika.jpg")
         ];
 
