@@ -161,3 +161,9 @@
     margin-top: 8px;
     font-size: small;
 }
+
+#member-modal-linkedin-div {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}

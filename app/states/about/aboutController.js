@@ -6,12 +6,13 @@ angular.module('kApp').controller('AboutCtrl',
         
         $scope.selectedMember = null;
 
-        function memberObject(name, position, image, description) {
+        function memberObject(name, position, image, description, linkedIn) {
             return member = {
                 name: name,
                 position: position,
                 image: image,
-                description: description
+                description: description,
+                linkedIn: linkedIn
             };
         }
         
@@ -23,7 +24,8 @@ angular.module('kApp').controller('AboutCtrl',
 
             memberObject("Kawika Avilla", "Web Developer", "../../assets/kawika.jpg",
                 "Member since 2017. Full Time Developer at WeightUp Solutions. Graduated from University of Wisconsin - Madison " +
-                "with a B.S. in Computer Science."
+                "with a B.S. in Computer Science.",
+                "https://www.linkedin.com/in/kawika-avilla-b03077135/"
             )
         ];
         
