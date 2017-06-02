@@ -124,3 +124,25 @@
     }
 }
 
+#member-modal-div {
+    padding: 12px;
+    display: flex;
+}
+
+#member-modal-img {
+    height: 220px;
+    width: auto;
+    float: left;
+    border-radius: 50%;
+    border: solid lightgrey 1px;
+}
+
+#member-modal-info-holder {
+    float: left;
+    margin: auto;
+}
+
+#member-modal-info-holder span {
+    display: block;
+    font-size: larger;
+}

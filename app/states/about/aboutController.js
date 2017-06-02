@@ -2,7 +2,9 @@
  * Created by kawika on 5/4/17.
  */
 angular.module('kApp').controller('AboutCtrl',
-    function ($scope) {
+    function ($scope, $modal) {
+        
+        $scope.selectedMember = null;
 
         function memberObject(name, position, image, description) {
             return member = {
@@ -12,6 +14,7 @@ angular.module('kApp').controller('AboutCtrl',
                 description: description
             };
         }
+        
         $scope.memberArray = [
             memberObject("Tammy L. Park", "Creative Director", "../../assets/tammy.jpg"),
             memberObject("Shelly Yang", "Executive Producer", "../../assets/shelly.jpg"),
@@ -19,6 +22,15 @@ angular.module('kApp').controller('AboutCtrl',
             memberObject("Jin-An Ho", "Producer", "../../assets/jin-an.jpg"),
             memberObject("Kawika Avilla", "Web Developer", "../../assets/kawika.jpg")
         ];
+        
+        $scope.selectMember = function (memberObj) {
+            $scope.selectedMember = memberObj;
+            $modal.open({
+                templateUrl: 'memberModal.html',
+                windowClass: 'memberModal',
+                scope: $scope
+            });
+        }
 
 
 

@@ -4,7 +4,7 @@
         <h3 id="about-us-page-header" class="custom-page-header">
             Members
         </h3>
-        <div id="about-us-member-profile" ng-repeat="member in memberArray">
+        <div id="about-us-member-profile" ng-repeat="member in memberArray" ng-click="selectMember(member)">
             <img ng-src="{{member.image}}"/>
             <span id="about-us-member-profile-name">{{member.name}}</span>
             <span id="about-us-member-profile-position">{{member.position}}</span>
@@ -75,3 +75,13 @@
         </div>
     </div>
 </div>
+
+<script type="text/ng-template" id="memberModal.html">
+    <div id="member-modal-div">
+        <img id="member-modal-img" ng-src="{{selectedMember.image}}"/>
+        <div id="member-modal-info-holder">
+            <span>{{selectedMember.name}}</span>
+            <span>{{selectedMember.position}}</span>
+        </div>
+    </div>
+</script>
