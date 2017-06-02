@@ -20,7 +20,11 @@ angular.module('kApp').controller('AboutCtrl',
             memberObject("Shelly Yang", "Executive Producer", "../../assets/shelly.jpg"),
             memberObject("Cindy Xu", "Producer", "../../assets/cindy.jpg"),
             memberObject("Jin-An Ho", "Producer", "../../assets/jin-an.jpg"),
-            memberObject("Kawika Avilla", "Web Developer", "../../assets/kawika.jpg")
+
+            memberObject("Kawika Avilla", "Web Developer", "../../assets/kawika.jpg",
+                "Member since 2017. Full Time Developer at WeightUp Solutions. Graduated from University of Wisconsin - Madison " +
+                "with a B.S. in Computer Science."
+            )
         ];
         
         $scope.selectMember = function (memberObj) {

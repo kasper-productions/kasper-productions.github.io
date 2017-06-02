@@ -80,8 +80,18 @@
     <div id="member-modal-div">
         <img id="member-modal-img" ng-src="{{selectedMember.image}}"/>
         <div id="member-modal-info-holder">
-            <span>{{selectedMember.name}}</span>
-            <span>{{selectedMember.position}}</span>
+            <span id="member-modal-name">{{selectedMember.name}}</span>
+            <span id="member-modal-position">{{selectedMember.position}}</span>
+            <p id="member-modal-description" ng-if="selectedMember.description != null">
+                {{selectedMember.description}}
+            </p>
+            <span>
+                <a href="https://www.facebook.com/kasper.uwmadison"
+                   class="btn-social btn-outline fa-stack custom-footer-icon">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-fw fa-linkedin fa-stack-1x"></i>
+                </a>
+            </span>
         </div>
     </div>
 </script>

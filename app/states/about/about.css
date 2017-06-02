@@ -140,9 +140,24 @@
 #member-modal-info-holder {
     float: left;
     margin: auto;
+    padding: 12px;
 }
 
 #member-modal-info-holder span {
     display: block;
     font-size: larger;
+}
+
+#member-modal-name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#member-modal-position {
+    font-style: italic;
+}
+
+#member-modal-description {
+    margin-top: 8px;
+    font-size: small;
 }
