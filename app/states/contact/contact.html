@@ -34,7 +34,8 @@
                               id="message" placeholder="MESSAGE"></textarea>
                 </div>
                 <button type="submit"
-                        class="btn btn-default contact-input-fields-button-child">Submit</button>
+                        class="btn btn-default contact-input-fields-button-child">Submit
+                </button>
             </form>
         </div>
     </div>
@@ -78,6 +79,12 @@
             </div>
         </div>
     </div>
-
-    <script type="text/ng-template" id="contactModal.html"></script>
 </div>
+
+<script type="text/ng-template" id="contactModal.html">
+    <div id="contact-modal-div">
+        <span ng-if="!notEnoughData" id="contact-modal-icon-good">&#10004;</span>
+        <span ng-if="notEnoughData" id="contact-modal-icon-bad">&#10008;</span>
+        <span id="contact-modal-text">{{response}}</span>
+    </div>
+</script>
