@@ -82,11 +82,11 @@
     font-weight: 400;
 }
 
-/*#about-us-member-profile:hover {*/
-    /*-moz-box-shadow:    0 0 3px 2px #ccc;*/
-    /*-webkit-box-shadow: 0 0 3px 2px #ccc;*/
-    /*box-shadow:         0 0 3px 2px #ccc;*/
-/*}*/
+#about-us-member-profile:hover {
+    -moz-box-shadow:    0 0 3px 2px #ccc;
+    -webkit-box-shadow: 0 0 3px 2px #ccc;
+    box-shadow:         0 0 3px 2px #ccc;
+}
 
 #about-us-member-profile img {
     height: 65%;
@@ -117,7 +117,7 @@
     color: black;
 }
 
-@media (max-height: 670px){
+@media (max-height: 700px){
     #custom-about-footer {
         position: static;
     }
