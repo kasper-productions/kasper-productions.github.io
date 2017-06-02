@@ -17,11 +17,11 @@
 }
 
 .about-us-paragraph {
-    max-width: 850px;
+    max-width: 950px;
     padding-left: 12px;
     padding-right: 12px;
     display: inline-block;
-    text-align: left
+    text-align: left;
 }
 
 .about-us-paragraph a {
@@ -33,6 +33,10 @@
     margin-top: 8px;
     width: 50%;
     border-radius: 0;
+}
+
+.about-us-paragraph p {
+    margin-bottom: 12px;
 }
 
 .about-us-paragraph a:hover {
