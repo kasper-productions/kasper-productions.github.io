@@ -130,8 +130,9 @@
 }
 
 #member-modal-img {
-    height: 220px;
-    width: auto;
+    height: 40%;
+    width: 40%;
+    margin: auto;
     float: left;
     border-radius: 50%;
     border: solid lightgrey 1px;
