@@ -6,7 +6,9 @@ angular.module('kApp').controller('VideosCtrl',
         $scope.currentVideo = "https://www.youtube.com/embed/eu5c5ETMMKs";
 
         var videoIds = [
-            'eu5c5ETMMKs'
+            'eu5c5ETMMKs', '4ZwfnyrWWd0', 'SbPWDanATyQ',
+            '1tCM-TADM6k', 'lcKH-ngMCM8', 'xHU-eFVxE3k',
+            '7HpvwF_PpPk', 'R544oZHHF-U', 'iKUlsk2R_YU'
         ];
 
         $scope.videoObjects = [];
