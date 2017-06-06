@@ -9,17 +9,20 @@
     <div id="video-list-holder">
         <div id="video-list-row">
             <div class="video-list-col">
-                <div ng-repeat="videoObject in videoObjects1">
+                <div ng-click="selectVideo(videoObject)" class="video-object-div"
+                     ng-repeat="videoObject in videoObjects1">
                     <img ng-src="{{videoObject.thumbnail}}"/>
                 </div>
             </div>
             <div class="video-list-col">
-                <div ng-repeat="videoObject in videoObjects2">
+                <div ng-click="selectVideo(videoObject)" class="video-object-div"
+                     ng-repeat="videoObject in videoObjects2">
                     <img ng-src="{{videoObject.thumbnail}}"/>
                 </div>
             </div>
             <div class="video-list-col">
-                <div ng-repeat="videoObject in videoObjects3">
+                <div ng-click="selectVideo(videoObject)" class="video-object-div"
+                     ng-repeat="videoObject in videoObjects3">
                     <img ng-src="{{videoObject.thumbnail}}"/>
                 </div>
             </div>

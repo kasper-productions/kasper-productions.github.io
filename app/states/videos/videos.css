@@ -33,3 +33,7 @@
     display: inline-block;
     background-color: white;
 }
+
+.video-object-div {
+    cursor: pointer;
+}
