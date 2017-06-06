@@ -17,3 +17,12 @@
 #custom-videos-footer {
     position: static;
 }
+
+#video-list-holder {
+    width: 100%;
+    height: auto;
+}
+
+#video-list-row {
+    white-space: nowrap;
+}
