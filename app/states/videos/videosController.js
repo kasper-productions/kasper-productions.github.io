@@ -11,9 +11,13 @@ angular.module('kApp').controller('VideosCtrl',
             '7HpvwF_PpPk', 'R544oZHHF-U', 'iKUlsk2R_YU'
         ];
 
-        $scope.videoObjects = [];
+        $scope.videoObjects1 = [];
+        $scope.videoObjects2 = [];
+        $scope.videoObjects3 = [];
 
         $scope.$on('$viewContentLoaded', function() {
+            var pushToCol = 1;
+            
             for (var i = 0; i < videoIds.length; i += 1) {
                 var videoId = videoIds[i];
                 var videoObject = {
@@ -22,7 +26,24 @@ angular.module('kApp').controller('VideosCtrl',
                     embed: "https://www.youtube.com/embed/" + videoId
                 };
 
-                $scope.videoObjects.push(videoObject);
+                switch (pushToCol) {
+                    case (1):
+                        $scope.videoObjects1.push(videoObject);
+                        pushToCol += 1;
+                        break;
+                    case (2):
+                        $scope.videoObjects2.push(videoObject);
+                        pushToCol += 1;
+                        break;
+                    case (3):
+                        $scope.videoObjects3.push(videoObject);
+                        pushToCol = 1;
+                        break;
+                    default:
+                        $scope.videoObjects1.push(videoObject);
+                        pushToCol = 1;
+                        break;
+                }
             }
 
         });

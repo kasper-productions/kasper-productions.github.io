@@ -8,8 +8,20 @@
     </div>
     <div id="video-list-holder">
         <div id="video-list-row">
-            <div ng-repeat="videoObject in videoObjects">
-                <img ng-src="{{videoObject.thumbnail}}"/>
+            <div class="video-list-col">
+                <div ng-repeat="videoObject in videoObjects1">
+                    <img ng-src="{{videoObject.thumbnail}}"/>
+                </div>
+            </div>
+            <div class="video-list-col">
+                <div ng-repeat="videoObject in videoObjects2">
+                    <img ng-src="{{videoObject.thumbnail}}"/>
+                </div>
+            </div>
+            <div class="video-list-col">
+                <div ng-repeat="videoObject in videoObjects3">
+                    <img ng-src="{{videoObject.thumbnail}}"/>
+                </div>
             </div>
         </div>
     </div>
