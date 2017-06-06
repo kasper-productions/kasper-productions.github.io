@@ -1,20 +1,19 @@
-<div id="about-background-image-holder">
-    <img id="about-background-image" src="../../assets/about-background.png"/>
-</div>
 <div id="about-background">
-    <h2 class="custom-page-header white-text all-text-uppercase">
-        About Us
-    </h2>
-
     <!-- TODO make these clickable to expand a modal of more info on member -->
     <div id="about-us-member-profile-holder">
-        <div id="about-us-member-profile" ng-repeat="member in memberArray">
+        <h3 id="about-us-page-header" class="custom-page-header">
+            Members
+        </h3>
+        <div id="about-us-member-profile" ng-repeat="member in memberArray" ng-click="selectMember(member)">
             <img ng-src="{{member.image}}"/>
             <span id="about-us-member-profile-name">{{member.name}}</span>
             <span id="about-us-member-profile-position">{{member.position}}</span>
         </div>
     </div>
 
+    <h3 id="about-us-sub-header" class="custom-page-header">
+        About Us
+    </h3>
     <div class="text-center" id="about-us-paragraph-holder">
         <div class="about-us-paragraph">
             <p>
@@ -76,3 +75,24 @@
         </div>
     </div>
 </div>
+
+<script type="text/ng-template" id="memberModal.html">
+    <div id="member-modal-div">
+        <img id="member-modal-img" ng-src="{{selectedMember.image}}"/>
+        <div id="member-modal-info-holder">
+            <span id="member-modal-name">{{selectedMember.name}}</span>
+            <span id="member-modal-position">{{selectedMember.position}}</span>
+            <p id="member-modal-description" ng-if="selectedMember.description != null">
+                {{selectedMember.description}}
+            </p>
+        </div>
+
+        <div ng-if="selectedMember.linkedIn != null" id="member-modal-linkedin-div">
+            <a ng-href="{{selectedMember.linkedIn}}"
+               class="btn-social btn-outline fa-stack custom-footer-icon">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-fw fa-linkedin fa-stack-1x"></i>
+            </a>
+        </div>
+    </div>
+</script>
