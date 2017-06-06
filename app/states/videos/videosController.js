@@ -5,7 +5,23 @@ angular.module('kApp').controller('VideosCtrl',
     function ($scope, $sce) {
         $scope.currentVideo = "https://www.youtube.com/embed/eu5c5ETMMKs";
 
+        var videoIds = [
+            'eu5c5ETMMKs'
+        ];
+
+        $scope.videoObjects = [];
+
         $scope.$on('$viewContentLoaded', function() {
+            for (var i = 0; i < videoIds.length; i += 1) {
+                var videoId = videoIds[i];
+                var videoObject = {
+                    id: videoId,
+                    thumbnail: "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg",
+                    embed: "https://www.youtube.com/embed/" + videoId
+                };
+
+                $scope.videoObjects.push(videoObject);
+            }
 
         });
 

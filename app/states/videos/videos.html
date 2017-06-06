@@ -8,7 +8,9 @@
     </div>
     <div id="video-list-holder">
         <div id="video-list-row">
-
+            <div ng-repeat="videoObject in videoObjects">
+                <img ng-src="{{videoObject.thumbnail}}"/>
+            </div>
         </div>
     </div>
 
