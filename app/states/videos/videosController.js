@@ -5,17 +5,26 @@ angular.module('kApp').controller('VideosCtrl',
     function ($scope, $sce, $location, $anchorScroll) {
         //First id is default video
 
-        var videoIds = [
-            'eu5c5ETMMKs', '4ZwfnyrWWd0', 'SbPWDanATyQ',
-            '1tCM-TADM6k', 'lcKH-ngMCM8', 'xHU-eFVxE3k',
-            '7HpvwF_PpPk', 'R544oZHHF-U', 'iKUlsk2R_YU',
-            'Xykz91bwSDY', 'I1NwLHeKtEE', 'iGcGb287SxE'
+        var videoPreobjects = [
+            {id: 'eu5c5ETMMKs', name: "Hobgoblin Cover"},
+            {id: '4ZwfnyrWWd0', name: "Member Intro 2.5"},
+            {id: 'SbPWDanATyQ', name: "2017 Promo"},
+            {id: '1tCM-TADM6k', name: "Rookie Cover"},
+            {id: 'lcKH-ngMCM8', name: "Doctor Pepper Dance"},
+            {id: 'xHU-eFVxE3k', name: "Yum Yum Cover"},
+            {id: '7HpvwF_PpPk', name: "Whisper Cover"},
+            {id: 'R544oZHHF-U', name: "Party Favors Dance"},
+            {id: 'iKUlsk2R_YU', name: "BTS - Fire Workshop"},
+            {id: 'Xykz91bwSDY', name: "2015 Promo"},
+            {id: 'I1NwLHeKtEE', name: "GD - Who You? Workshop"},
+            {id: 'iGcGb287SxE', name: "Twice - Ooh Ahh Workshop"}
         ];
 
         var defaultVideoObject = {
-            id: videoIds[0],
-            thumbnail: "https://img.youtube.com/vi/" + videoIds[0] + "/hqdefault.jpg",
-            embed: "https://www.youtube.com/embed/" + videoIds[0]
+            id: videoPreobjects[0].id,
+            name: videoPreobjects[0].name,
+            thumbnail: "https://img.youtube.com/vi/" + videoPreobjects[0].id + "/hqdefault.jpg",
+            embed: "https://www.youtube.com/embed/" + videoPreobjects[0].id
         };
 
         $scope.currentVideo = defaultVideoObject;
@@ -30,12 +39,13 @@ angular.module('kApp').controller('VideosCtrl',
         $scope.$on('$viewContentLoaded', function() {
             var pushToCol = 1;
             
-            for (var i = 0; i < videoIds.length; i += 1) {
-                var videoId = videoIds[i];
+            for (var i = 0; i < videoPreobjects.length; i += 1) {
+                var videoPreobject = videoPreobjects[i];
                 var videoObject = {
-                    id: videoId,
-                    thumbnail: "https://img.youtube.com/vi/" + videoId + "/mqdefault.jpg",
-                    embed: "https://www.youtube.com/embed/" + videoId
+                    id: videoPreobject.id,
+                    name: videoPreobject.name,
+                    thumbnail: "https://img.youtube.com/vi/" + videoPreobject.id + "/mqdefault.jpg",
+                    embed: "https://www.youtube.com/embed/" + videoPreobject.id
                 };
 
                 switch (pushToCol) {

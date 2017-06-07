@@ -58,16 +58,17 @@
 .video-object-overlay {
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .85);
     text-align: center;
     position: absolute;
     display: table;
-    padding: 12px;
+    border-spacing: 4px;
 }
 
 .video-object-overlay span {
     color: white;
     display: table-cell;
     vertical-align: middle;
-    font-size: x-large;
+    font-size: large;
+    font-weight: bold;
 }
