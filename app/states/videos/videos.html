@@ -16,7 +16,9 @@
                     <img ng-src="{{videoObject.thumbnail}}"/>
                     <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
                          class="video-object-overlay">
-                        {{videoObject.id}}
+                        <span class="all-text-uppercase">
+                            {{videoObject.id}}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -28,7 +30,9 @@
                     <img ng-src="{{videoObject.thumbnail}}"/>
                     <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
                          class="video-object-overlay">
-                        {{videoObject.id}}
+                        <span class="all-text-uppercase">
+                            {{videoObject.id}}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -40,7 +44,23 @@
                     <img ng-src="{{videoObject.thumbnail}}"/>
                     <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
                          class="video-object-overlay">
-                        {{videoObject.id}}
+                        <span class="all-text-uppercase">
+                            {{videoObject.id}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="video-list-col">
+                <div ng-click="selectVideo(videoObject)" class="video-object-div"
+                     ng-repeat="videoObject in videoObjects4"
+                     ng-mouseover="showOverlay(videoObject)"
+                     ng-mouseleave="showOverlay(null)">
+                    <img ng-src="{{videoObject.thumbnail}}"/>
+                    <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
+                         class="video-object-overlay">
+                        <span class="all-text-uppercase">
+                            {{videoObject.id}}
+                        </span>
                     </div>
                 </div>
             </div>

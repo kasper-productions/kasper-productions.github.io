@@ -8,7 +8,8 @@ angular.module('kApp').controller('VideosCtrl',
         var videoIds = [
             'eu5c5ETMMKs', '4ZwfnyrWWd0', 'SbPWDanATyQ',
             '1tCM-TADM6k', 'lcKH-ngMCM8', 'xHU-eFVxE3k',
-            '7HpvwF_PpPk', 'R544oZHHF-U', 'iKUlsk2R_YU'
+            '7HpvwF_PpPk', 'R544oZHHF-U', 'iKUlsk2R_YU',
+            'Xykz91bwSDY', 'I1NwLHeKtEE', 'iGcGb287SxE'
         ];
 
         var defaultVideoObject = {
@@ -24,6 +25,7 @@ angular.module('kApp').controller('VideosCtrl',
         $scope.videoObjects1 = [];
         $scope.videoObjects2 = [];
         $scope.videoObjects3 = [];
+        $scope.videoObjects4 = [];
 
         $scope.$on('$viewContentLoaded', function() {
             var pushToCol = 1;
@@ -47,6 +49,10 @@ angular.module('kApp').controller('VideosCtrl',
                         break;
                     case (3):
                         $scope.videoObjects3.push(videoObject);
+                        pushToCol += 1;
+                        break;
+                    case (4):
+                        $scope.videoObjects4.push(videoObject);
                         pushToCol = 1;
                         break;
                     default:
