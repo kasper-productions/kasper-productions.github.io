@@ -10,20 +10,38 @@
         <div id="video-list-row">
             <div class="video-list-col">
                 <div ng-click="selectVideo(videoObject)" class="video-object-div"
-                     ng-repeat="videoObject in videoObjects1">
+                     ng-repeat="videoObject in videoObjects1"
+                     ng-mouseover="showOverlay(videoObject)"
+                     ng-mouseleave="showOverlay(null)">
                     <img ng-src="{{videoObject.thumbnail}}"/>
+                    <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
+                         class="video-object-overlay">
+                        {{videoObject.id}}
+                    </div>
                 </div>
             </div>
             <div class="video-list-col">
                 <div ng-click="selectVideo(videoObject)" class="video-object-div"
-                     ng-repeat="videoObject in videoObjects2">
+                     ng-repeat="videoObject in videoObjects2"
+                     ng-mouseover="showOverlay(videoObject)"
+                     ng-mouseleave="showOverlay(null)">
                     <img ng-src="{{videoObject.thumbnail}}"/>
+                    <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
+                         class="video-object-overlay">
+                        {{videoObject.id}}
+                    </div>
                 </div>
             </div>
             <div class="video-list-col">
                 <div ng-click="selectVideo(videoObject)" class="video-object-div"
-                     ng-repeat="videoObject in videoObjects3">
+                     ng-repeat="videoObject in videoObjects3"
+                     ng-mouseover="showOverlay(videoObject)"
+                     ng-mouseleave="showOverlay(null)">
                     <img ng-src="{{videoObject.thumbnail}}"/>
+                    <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
+                         class="video-object-overlay">
+                        {{videoObject.id}}
+                    </div>
                 </div>
             </div>
         </div>

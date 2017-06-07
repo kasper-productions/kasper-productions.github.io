@@ -18,6 +18,7 @@ angular.module('kApp').controller('VideosCtrl',
         };
 
         $scope.currentVideo = defaultVideoObject;
+        $scope.videoWithOverlay = null;
 
 
         $scope.videoObjects1 = [];
@@ -59,6 +60,14 @@ angular.module('kApp').controller('VideosCtrl',
 
         $scope.getCurrentVideo = function () {
             return $sce.trustAsResourceUrl($scope.currentVideo.embed);
+        };
+
+        $scope.getObjectThatIsShowingOverlay = function () {
+            return $scope.videoWithOverlay;
+        };
+
+        $scope.showOverlay = function (videoObject) {
+            $scope.videoWithOverlay = videoObject;
         };
 
         $scope.selectVideo = function (videoObject) {
