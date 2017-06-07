@@ -2,7 +2,7 @@
  * Created by kawika on 5/4/17.
  */
 angular.module('kApp').controller('VideosCtrl',
-    function ($scope, $sce) {
+    function ($scope, $sce, $location, $anchorScroll) {
         //First id is default video
         var videoIds = [
             'eu5c5ETMMKs', '4ZwfnyrWWd0', 'SbPWDanATyQ',
@@ -62,6 +62,8 @@ angular.module('kApp').controller('VideosCtrl',
 
         $scope.selectVideo = function (videoObject) {
             $scope.currentVideo = videoObject;
+            $location.hash("current-video");
+            $anchorScroll();
         }
     }
 );
