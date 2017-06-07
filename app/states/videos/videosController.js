@@ -4,6 +4,7 @@
 angular.module('kApp').controller('VideosCtrl',
     function ($scope, $sce, $location, $anchorScroll) {
         //First id is default video
+
         var videoIds = [
             'eu5c5ETMMKs', '4ZwfnyrWWd0', 'SbPWDanATyQ',
             '1tCM-TADM6k', 'lcKH-ngMCM8', 'xHU-eFVxE3k',
@@ -30,7 +31,7 @@ angular.module('kApp').controller('VideosCtrl',
                 var videoId = videoIds[i];
                 var videoObject = {
                     id: videoId,
-                    thumbnail: "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg",
+                    thumbnail: "https://img.youtube.com/vi/" + videoId + "/mqdefault.jpg",
                     embed: "https://www.youtube.com/embed/" + videoId
                 };
 
@@ -63,6 +64,7 @@ angular.module('kApp').controller('VideosCtrl',
         $scope.selectVideo = function (videoObject) {
             $scope.currentVideo = videoObject;
             $location.hash("current-video");
+            $anchorScroll.yOffset = 83;
             $anchorScroll();
         }
     }
