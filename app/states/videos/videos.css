@@ -42,14 +42,15 @@
     height: 180px;
     overflow: hidden;
     background: black;
+    text-align: center;
 }
 
 .video-object-div img {
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 100%;
-    width: auto;
+    height: 82%;
+    width: 95%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
