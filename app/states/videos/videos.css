@@ -25,7 +25,6 @@
 }
 
 #video-list-holder {
-
 }
 
 .video-object-div {
@@ -36,6 +35,8 @@
     overflow: hidden;
     background: black;
     text-align: center;
+    display: block;
+    margin: auto;
 }
 
 .video-object-div img {
@@ -63,13 +64,9 @@
     transform: translate(-50%,-50%);
 }
 
-.bluh {
-    display: table;
-}
-
-.bluh-bitch {
-    display: table-cell;
-    text-align: center;
+.video-col-center {
+    float: none;
+    margin: 0 auto;
 }
 
 .video-object-overlay span {
