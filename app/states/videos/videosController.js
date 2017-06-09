@@ -3,8 +3,8 @@
  */
 angular.module('kApp').controller('VideosCtrl',
     function ($scope, $sce, $location, $anchorScroll) {
+        
         //First id is default video
-
         var videoPreobjects = [
             {id: 'eu5c5ETMMKs', name: "Hobgoblin Cover"},
             {id: '4ZwfnyrWWd0', name: "Member Intro 2.5"},
@@ -64,7 +64,6 @@ angular.module('kApp').controller('VideosCtrl',
         $scope.selectVideo = function (videoObject) {
             $scope.currentVideo = videoObject;
             $location.hash("current-video");
-            $anchorScroll.yOffset = 83;
             $anchorScroll();
         }
     }
