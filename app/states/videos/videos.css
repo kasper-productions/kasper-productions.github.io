@@ -9,6 +9,11 @@
     background: black;
 }
 
+#videos-background::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 #current-video {
     width: 100%;
     height: 400px;
