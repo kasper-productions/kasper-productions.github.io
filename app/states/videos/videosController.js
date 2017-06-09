@@ -31,13 +31,9 @@ angular.module('kApp').controller('VideosCtrl',
         $scope.videoWithOverlay = null;
 
 
-        $scope.videoObjects1 = [];
-        $scope.videoObjects2 = [];
-        $scope.videoObjects3 = [];
-        $scope.videoObjects4 = [];
+        $scope.videoObjects = [];
 
         $scope.$on('$viewContentLoaded', function() {
-            var pushToCol = 1;
             
             for (var i = 0; i < videoPreobjects.length; i += 1) {
                 var videoPreobject = videoPreobjects[i];
@@ -48,27 +44,7 @@ angular.module('kApp').controller('VideosCtrl',
                     embed: "https://www.youtube.com/embed/" + videoPreobject.id
                 };
 
-                switch (pushToCol) {
-                    case (1):
-                        $scope.videoObjects1.push(videoObject);
-                        break;
-                    case (2):
-                        $scope.videoObjects2.push(videoObject);
-                        pushToCol += 1;
-                        break;
-                    case (3):
-                        $scope.videoObjects3.push(videoObject);
-                        pushToCol += 1;
-                        break;
-                    case (4):
-                        $scope.videoObjects4.push(videoObject);
-                        pushToCol = 1;
-                        break;
-                    default:
-                        $scope.videoObjects1.push(videoObject);
-                        pushToCol = 1;
-                        break;
-                }
+                $scope.videoObjects.push(videoObject);
             }
 
         });

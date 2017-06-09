@@ -7,13 +7,13 @@
         </iframe>
     </div>
     <div id="video-list-holder" class="container-fluid">
-        <div id="row">
+        <div class="row">
             <div class="container">
                 <div ng-click="selectVideo(videoObject)"
                      class="col-xs-6 col-sm-4 col-md-3 col-lg-2 video-object-div"
-                     ng-repeat="videoObject in videoObjects1"
-                     ng-mouseover="showOverlay(videoObject)">
-                     <!--ng-mouseleave="showOverlay(null)">-->
+                     ng-repeat="videoObject in videoObjects"
+                     ng-mouseover="showOverlay(videoObject)"
+                     ng-mouseleave="showOverlay(null)">
                     <img ng-src="{{videoObject.thumbnail}}"/>
                     <div ng-if="getObjectThatIsShowingOverlay() == videoObject"
                          class="video-object-overlay">
