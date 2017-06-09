@@ -24,22 +24,11 @@
     text-align: center;
 }
 
-#video-list-row {
-    white-space: nowrap;
-}
-
-.video-list-col {
-    height: 100%;
-    width: 22%;
-    display: inline-block;
-    background-color: white;
-}
-
 .video-object-div {
     cursor: pointer;
     position: relative;
-    width: 100%;
     height: 180px;
+    width: 280px;
     overflow: hidden;
     background: black;
     text-align: center;
@@ -59,11 +48,15 @@
 .video-object-overlay {
     height: 100%;
     width: 100%;
+    left: 50%;
+    top: 50%;
     background: rgba(0, 0, 0, .85);
     text-align: center;
     position: absolute;
     display: table;
-    border-spacing: 4px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 .video-object-overlay span {

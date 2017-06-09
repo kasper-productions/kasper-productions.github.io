@@ -51,7 +51,6 @@ angular.module('kApp').controller('VideosCtrl',
                 switch (pushToCol) {
                     case (1):
                         $scope.videoObjects1.push(videoObject);
-                        pushToCol += 1;
                         break;
                     case (2):
                         $scope.videoObjects2.push(videoObject);
