@@ -1,0 +1,78 @@
+#videos-background {
+    padding: 0 0 8px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: black;
+}
+
+#videos-background::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#current-video {
+    width: 100%;
+    padding-top: 83px;
+    height: 500px;
+}
+
+#custom-videos-footer {
+    position: static;
+}
+
+#video-list-holder {
+}
+
+.video-object-div {
+    cursor: pointer;
+    position: relative;
+    height: 180px;
+    width: 280px;
+    overflow: hidden;
+    background: black;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.video-object-div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 82%;
+    width: 95%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.video-object-overlay {
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    background: rgba(0, 0, 0, .85);
+    text-align: center;
+    position: absolute;
+    display: table;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.video-col-center {
+    float: none;
+    margin: 0 auto;
+}
+
+.video-object-overlay span {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: large;
+    font-weight: bold;
+}
