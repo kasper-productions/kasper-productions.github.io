@@ -3,6 +3,7 @@
  */
 angular.module('kApp').controller('PhotosCtrl',
     function ($scope) {
+        
 
         $scope.imagesCol1 = [];
         $scope.imagesCol2 = [];

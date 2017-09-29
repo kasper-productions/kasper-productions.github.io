@@ -15,7 +15,9 @@ angular.module('kApp', [
         'ui.bootstrap',
         'angular-loading-bar',
         'ngAnimate',
-        'thatisuday.ng-image-gallery'
+        'thatisuday.ng-image-gallery',
+
+        'kApp.photosManager'
     ]
 ).config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider',
     function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
