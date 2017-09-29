@@ -5,6 +5,24 @@ angular.module('kApp').controller('PhotosCtrl',
     function ($scope) {
         
 
+        //TODO make this more agnostic. After I make this show albums I'm gunna make the portal so I can handle agnosticism
+        var album1 = {
+            name: "Headshot Potraits",
+            photos: []
+        };
+
+        var album2 = {
+            name: "Madacom",
+            photos: []
+        };
+
+        var album3 = {
+            name: "Workshop",
+            photos: []
+        };
+
+        $scope.albums = [ album1, album2, album3 ];
+
         $scope.imagesCol1 = [];
         $scope.imagesCol2 = [];
         $scope.imagesCol3 = [];
