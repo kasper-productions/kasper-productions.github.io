@@ -6,6 +6,7 @@ angular.module('kApp').controller('VideosCtrl',
         
         //First id is default video
         var videoPreobjects = [
+            {id: 'b7OHXXXn0xI', name: "Knock Knock Knock"},
             {id: 'eu5c5ETMMKs', name: "Hobgoblin Cover"},
             {id: '4ZwfnyrWWd0', name: "Member Intro 2.5"},
             {id: 'SbPWDanATyQ', name: "2017 Promo"},

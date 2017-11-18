@@ -1,4 +1,7 @@
 <div id="photos-holder">
+    <ul class="albums" ng-repeat="album in albums">
+        <li ng-click="onAlbumSelected(album.photos)">{{album.name}}</li>
+    </ul>
     <div class="image-gallery-holder-row">
         <div class="image-gallery-holder-col">
             <ng-image-gallery images="imagesCol1"

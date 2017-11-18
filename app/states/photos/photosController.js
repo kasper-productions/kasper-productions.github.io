@@ -3,25 +3,31 @@
  */
 angular.module('kApp').controller('PhotosCtrl',
     function ($scope) {
-        
 
-        //TODO make this more agnostic. After I make this show albums I'm gunna make the portal so I can handle agnosticism
+        /**
+         * Album Object:
+         *
+         * in S3 should be mapped out to contain initial character ID, and the number of the image in order.
+         * along with m for main and t for thumbs
+         *
+         * id (character): initial character in AWS S3
+         * fileType (string): file type S3, example: JPEG
+         * lastImageNumber (int): the last image in S3 for mapping purposes
+         * path (string): path in S3
+         * name (string): to be displayed in website
+         * photos (array of image objects): for display purposes
+         */
+
         var album1 = {
-            name: "Headshot Potraits",
+            id: 'b',
+            fileType: '.jpg',
+            lastImageNumber: 61,
+            path: 'balloons',
+            name: 'Balloons',
             photos: []
         };
 
-        var album2 = {
-            name: "Madacom",
-            photos: []
-        };
-
-        var album3 = {
-            name: "Workshop",
-            photos: []
-        };
-
-        $scope.albums = [ album1, album2, album3 ];
+        $scope.albums = [ album1 ];
 
         $scope.imagesCol1 = [];
         $scope.imagesCol2 = [];
@@ -57,14 +63,37 @@ angular.module('kApp').controller('PhotosCtrl',
         ];
 
         $scope.$on('$viewContentLoaded', function(){
-            var pushToCol = 1;
-            for (var i = 0; i < $scope.fileNames.length; i += 1) {
-                var fileName = $scope.fileNames[i];
+            for (var i = 0; i < $scope.albums.length; i += 1) {
+                var album = $scope.albums[i];
+                mapPhotosToAlbum(album);
+            }
+        });
+
+        function mapPhotosToAlbum (album) {
+            if (!album.id || !album.lastImageNumber || !album.path || !album.name) {
+                return;
+            }
+
+            for (var i = 0; i < album.lastImageNumber; i += 1) {
+                var imageId = i + 1;
+                var fileName = album.id + (i + 1).toString() + album.fileType;
                 var imgObj = {
-                    id: i + 1,
-                    thumbUrl: 'https://s3.us-east-2.amazonaws.com/kasperprodphotos/thumbs/' + fileName,
-                    url: 'https://s3.us-east-2.amazonaws.com/kasperprodphotos/drive/' + fileName
+                    id: imageId,
+                    thumbUrl: 'https://s3.us-east-2.amazonaws.com/kasperprodphotos/' + album.path + '/t/' + fileName ,
+                    url: 'https://s3.us-east-2.amazonaws.com/kasperprodphotos/' + album.path + '/m/' + fileName
                 };
+                album.photos.push(imgObj);
+            }
+        }
+
+        $scope.onAlbumSelected = function (photos) {
+            mapIntoColumns(photos);
+        };
+
+        function mapIntoColumns (objects) {
+            var pushToCol = 1;
+            for (var i = 0; i < objects.length; i += 1) {
+                var imgObj = objects[i];
 
                 switch (pushToCol) {
                     case (1):
@@ -85,6 +114,7 @@ angular.module('kApp').controller('PhotosCtrl',
                         break;
                 }
             }
-        });
+        }
+
     }
 );
